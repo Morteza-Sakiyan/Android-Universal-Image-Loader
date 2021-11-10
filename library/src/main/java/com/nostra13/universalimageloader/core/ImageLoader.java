@@ -19,6 +19,7 @@ import android.graphics.Bitmap;
 import android.os.Handler;
 import android.os.Looper;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -286,6 +287,7 @@ public class ImageLoader {
 			if (options.shouldShowImageOnLoading()) {
 				imageAware.setImageDrawable(options.getImageOnLoading(configuration.resources));
 			} else if (options.isResetViewBeforeLoading()) {
+				Log.i(TAG, "displayImage: dfsdfsdf");
 				imageAware.setImageDrawable(null);
 			}
 
